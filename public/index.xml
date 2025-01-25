@@ -6,8 +6,16 @@
     <description>Recent content on Programming Polyglot - Julia&#39;s Blog</description>
     <generator>Hugo -- 0.126.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Sep 2024 20:55:37 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jan 2025 21:03:46 -0500</lastBuildDate>
     <atom:link href="https://julia-sam.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GCP vs Heroku: Deploying My Pronunciation Improvement App</title>
+      <link>https://julia-sam.github.io/blog/posts/deployment/</link>
+      <pubDate>Sun, 12 Jan 2025 21:03:46 -0500</pubDate>
+      <guid>https://julia-sam.github.io/blog/posts/deployment/</guid>
+      <description>Introduction With a background in Linguistics and Computer Science, I have always been interested in the interface between language and technology. This led me to build my pronunciation improvement app - a web application designed to help users practise and refine their English pronunciation. The app listens to the user&amp;rsquo;s speech input, analyzes it, and provides feedback to pinpoint where improvement might be needed.
+Project Overview Tech Stack and Libraries Frontend A React app that uses Chart.</description>
+    </item>
     <item>
       <title>GDP vs Life Satisfaction</title>
       <link>https://julia-sam.github.io/blog/posts/gdp-vs-life-satisfaction/</link>
