@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Analyzing E-Commerce Customer Behaviour and Churn | Programming Polyglot - Julia&#39;s Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="In this post, I explore and analyze some e-commerce customer data by identifying patterns in customer satisfaction and churn.
@@ -13,16 +13,16 @@ CustomerID Unique identifier for each customer. Gender
 Gender of the customer (Male/Female). MaritalStatus
 Marital status of the customer (Married/Single/Divorced). PreferedOrderCat Preferred order category of the customer (e.g., Fashion, Grocery, Mobile). SatisfactionScore Satisfaction score given by the customer (1 to 5).">
 <meta name="author" content="">
-<link rel="canonical" href="https://julia-sam.github.io/blog/posts/ecommerce-churn-prediction/">
+<link rel="canonical" href="http://localhost:1313/blog/posts/ecommerce-churn-prediction/">
 <link crossorigin="anonymous" href="/blog/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://julia-sam.github.io/blog/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://julia-sam.github.io/blog/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://julia-sam.github.io/blog/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://julia-sam.github.io/blog/apple-touch-icon.png">
-<link rel="mask-icon" href="https://julia-sam.github.io/blog/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/blog/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/blog/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/blog/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/blog/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/blog/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://julia-sam.github.io/blog/posts/ecommerce-churn-prediction/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/ecommerce-churn-prediction/">
 <noscript>
     <style>
         #theme-toggle,
@@ -60,94 +60,6 @@ Marital status of the customer (Married/Single/Divorced). PreferedOrderCat Prefe
 
     </style>
 </noscript>
-  
-    
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-T41YJNZVHX"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-T41YJNZVHX');
-        }
-      </script>
-    
-  
-
-<meta property="og:title" content="Analyzing E-Commerce Customer Behaviour and Churn" />
-<meta property="og:description" content="In this post, I explore and analyze some e-commerce customer data by identifying patterns in customer satisfaction and churn.
-The dataset used for this analysis includes information on customer demographics, purchasing behavior, and satisfaction scores. Key features include:
-CustomerID Unique identifier for each customer. Gender
-Gender of the customer (Male/Female). MaritalStatus
-Marital status of the customer (Married/Single/Divorced). PreferedOrderCat Preferred order category of the customer (e.g., Fashion, Grocery, Mobile). SatisfactionScore Satisfaction score given by the customer (1 to 5)." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://julia-sam.github.io/blog/posts/ecommerce-churn-prediction/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-07-20T13:00:38-04:00" />
-<meta property="article:modified_time" content="2024-07-20T13:00:38-04:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Analyzing E-Commerce Customer Behaviour and Churn"/>
-<meta name="twitter:description" content="In this post, I explore and analyze some e-commerce customer data by identifying patterns in customer satisfaction and churn.
-The dataset used for this analysis includes information on customer demographics, purchasing behavior, and satisfaction scores. Key features include:
-CustomerID Unique identifier for each customer. Gender
-Gender of the customer (Male/Female). MaritalStatus
-Marital status of the customer (Married/Single/Divorced). PreferedOrderCat Preferred order category of the customer (e.g., Fashion, Grocery, Mobile). SatisfactionScore Satisfaction score given by the customer (1 to 5)."/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://julia-sam.github.io/blog/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Analyzing E-Commerce Customer Behaviour and Churn",
-      "item": "https://julia-sam.github.io/blog/posts/ecommerce-churn-prediction/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Analyzing E-Commerce Customer Behaviour and Churn",
-  "name": "Analyzing E-Commerce Customer Behaviour and Churn",
-  "description": "In this post, I explore and analyze some e-commerce customer data by identifying patterns in customer satisfaction and churn.\nThe dataset used for this analysis includes information on customer demographics, purchasing behavior, and satisfaction scores. Key features include:\nCustomerID Unique identifier for each customer. Gender\nGender of the customer (Male/Female). MaritalStatus\nMarital status of the customer (Married/Single/Divorced). PreferedOrderCat Preferred order category of the customer (e.g., Fashion, Grocery, Mobile). SatisfactionScore Satisfaction score given by the customer (1 to 5).",
-  "keywords": [
-    
-  ],
-  "articleBody": "In this post, I explore and analyze some e-commerce customer data by identifying patterns in customer satisfaction and churn.\nThe dataset used for this analysis includes information on customer demographics, purchasing behavior, and satisfaction scores. Key features include:\nCustomerID Unique identifier for each customer. Gender\nGender of the customer (Male/Female). MaritalStatus\nMarital status of the customer (Married/Single/Divorced). PreferedOrderCat Preferred order category of the customer (e.g., Fashion, Grocery, Mobile). SatisfactionScore Satisfaction score given by the customer (1 to 5). Complain Whether the customer has made a complaint (Yes/No). Churn Whether the customer has churned (0 for no, 1 for yes). Key Analyses and Insights Who are the customers? I start off by getting the gender and marital status distribution and found:\nMale: 3384\nFemale: 2246\nMarried: 2986\nSingle: 1796\nDivorced: 848\nThe customer base is predominantly male, with males making up 60% and females 40% of the total customer population.\nDiscovering Preferred Order Categories I examine customer preferences by analyzing preferred order categories Categories like “Mobile Phone” and “Laptop \u0026 Accessory” have the highest satisfaction scores, indicating that these product categories are highly favored by customers.\nI also explore the relationship between marital status and preferred order categories to understand how different demographic groups shop. General Observations Dominance of Married Customers:\nAcross all product categories, married customers consistently show higher numbers compared to single and divorced customers. This indicates that married individuals might have a higher purchasing power or different shopping needs compared to other groups.\nSingle Customers:\nSingle customers generally follow married customers in numbers, with a considerable gap in categories like Laptop \u0026 Accessory and Mobile.\nDivorced Customers:\nDivorced customers consistently form the smallest group in all categories. This might reflect different shopping habits or economic conditions impacting their purchasing behavior.\n",
-  "wordCount" : "292",
-  "inLanguage": "en",
-  "datePublished": "2024-07-20T13:00:38-04:00",
-  "dateModified": "2024-07-20T13:00:38-04:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://julia-sam.github.io/blog/posts/ecommerce-churn-prediction/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Programming Polyglot - Julia's Blog",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://julia-sam.github.io/blog/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 
 <body class="" id="top">
@@ -165,7 +77,7 @@ Marital status of the customer (Married/Single/Divorced). PreferedOrderCat Prefe
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://julia-sam.github.io/blog/" accesskey="h" title="Programming Polyglot - Julia&#39;s Blog (Alt + H)">Programming Polyglot - Julia&#39;s Blog</a>
+            <a href="http://localhost:1313/blog/" accesskey="h" title="Programming Polyglot - Julia&#39;s Blog (Alt + H)">Programming Polyglot - Julia&#39;s Blog</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -263,7 +175,7 @@ Divorced customers consistently form the smallest group in all categories. This 
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://julia-sam.github.io/blog/">Programming Polyglot - Julia&#39;s Blog</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/blog/">Programming Polyglot - Julia&#39;s Blog</a></span> · 
 
     <span>
         Powered by

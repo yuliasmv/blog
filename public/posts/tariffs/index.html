@@ -5,12 +5,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>GCP vs Heroku: Deploying My Pronunciation Improvement App | Programming Polyglot - Julia&#39;s Blog</title>
+<title>How Canadian Businesses Perceived Tariff Pressure in 2025 | Programming Polyglot - Julia&#39;s Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="Introduction With a background in Linguistics and Computer Science, I have always been interested in the interface between language and technology. This led me to build my pronunciation improvement app - a web application designed to help users practise and refine their English pronunciation. The app listens to the user&rsquo;s speech input, analyzes it, and provides feedback to pinpoint where improvement might be needed.
-Project Overview Tech Stack and Libraries Frontend A React app that uses Chart.">
+<meta name="description" content="Introduction In 2025, trade tensions and tariff uncertainty was felt across North America. While tariffs are often discussed in terms of trade volumes and prices, I focus on how businesses perceive their impact, and how those perceptions evolve over time.
+This project explores quarterly business survey data from Statistics Canada and examines how Canadian businesses report the impact of tariffs across industries.
+Distribution of reported impacts This chart reflects how tariff impacts are distributed for both Canadian tariffs on imports and U.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/blog/posts/deployment/">
+<link rel="canonical" href="http://localhost:1313/blog/posts/tariffs/">
 <link crossorigin="anonymous" href="/blog/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/blog/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/blog/favicon-16x16.png">
@@ -19,7 +20,7 @@ Project Overview Tech Stack and Libraries Frontend A React app that uses Chart."
 <link rel="mask-icon" href="http://localhost:1313/blog/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/deployment/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/tariffs/">
 <noscript>
     <style>
         #theme-toggle,
@@ -108,83 +109,46 @@ Project Overview Tech Stack and Libraries Frontend A React app that uses Chart."
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      GCP vs Heroku: Deploying My Pronunciation Improvement App
+      How Canadian Businesses Perceived Tariff Pressure in 2025
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
     </h1>
-    <div class="post-meta"><span title='2025-01-12 21:03:46 -0500 EST'>January 12, 2025</span>
+    <div class="post-meta"><span title='2026-01-04 13:41:40 -0500 EST'>January 4, 2026</span>
 
 </div>
   </header> 
-  <div class="post-content"><img src="./GCPvsheroku.png" alt="Heroku vs GCP" width="650">
-
-<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
-<p>With a background in Linguistics and Computer Science, I have always been interested in the interface between language and technology. This led me to build my <a href="https://pronunciation-app-431109299234.northamerica-northeast1.run.app/">pronunciation improvement app</a> - a web application designed to help users practise and refine their English pronunciation. The app listens to the user&rsquo;s speech input, analyzes it, and provides feedback to pinpoint where improvement might be needed.</p>
-<h2 id="project-overview">Project Overview<a hidden class="anchor" aria-hidden="true" href="#project-overview">#</a></h2>
-<h3 id="tech-stack-and-libraries">Tech Stack and Libraries<a hidden class="anchor" aria-hidden="true" href="#tech-stack-and-libraries">#</a></h3>
-<h3 id="frontend">Frontend<a hidden class="anchor" aria-hidden="true" href="#frontend">#</a></h3>
-<p>A React app that uses Chart.js for pitch visualization and WaveSurver.js for audio waveform rendering.</p>
-<h3 id="backend">Backend<a hidden class="anchor" aria-hidden="true" href="#backend">#</a></h3>
-<p>A Flask server that:</p>
-<ul>
-<li>Handles REST API endpoints for:
-<ul>
-<li>Text-to-speech (TTS) requests (via the OpenAI TTS API).</li>
-<li>Pitch analysis (using Parselmouth for pitch extraction).</li>
-<li>Forced alignment (using torchaudio and FFmpeg for audio conversion and torchaudio.functional.forced_align for alignment).</li>
-</ul>
-</li>
-<li>Serves the build React frontend via send_from_directory.</li>
-</ul>
-<h3 id="audio-processing-libraries">Audio Processing Libraries<a hidden class="anchor" aria-hidden="true" href="#audio-processing-libraries">#</a></h3>
-<ul>
-<li>Parselmouth for pitch extraction.</li>
-<li>torchaudio for forced alignment and waveform manipulation.</li>
-<li>FFmpeg for audio format conversion.</li>
-</ul>
-<h2 id="deployment-to-heroku">Deployment to Heroku<a hidden class="anchor" aria-hidden="true" href="#deployment-to-heroku">#</a></h2>
-<ul>
-<li>Heroku was good to start with as I was developing the app while it was small and had minimal dependencies.</li>
-<li>All that was needed was a Git push and a Procfile. The Procfile specifies how Heroku should launch the Flask app.</li>
-</ul>
-<p>For example, this is what I included in mine:
-<img src="./procfile.png" alt="Procfile" width="250">
+  <div class="post-content"><p><img loading="lazy" src="./us-can-tariffs.jpg" alt="tariffs"  />
 </p>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>In 2025, trade tensions and tariff uncertainty was felt across North America. While tariffs are often discussed in terms of trade volumes and prices, I focus on how businesses perceive their impact, and how those perceptions evolve over time.</p>
+<p>This project explores quarterly business survey data from Statistics Canada and examines how Canadian businesses report the impact of tariffs across industries.</p>
+<h2 id="distribution-of-reported-impacts">Distribution of reported impacts<a hidden class="anchor" aria-hidden="true" href="#distribution-of-reported-impacts">#</a></h2>
+<p><img loading="lazy" src="./impact-dist.png" alt="Impact distribution"  />
+</p>
+<p>This chart reflects how tariff impacts are distributed for both Canadian tariffs on imports and U.S. tariffs on exports. I look at Q3 and Q4 specifically because many business responses in Q2 were collected shortly after the tariffs were first announced or just coming into effect. This means that businesses were still forming expectations and many were unsure how tariffs would affect them.</p>
+<p>Some patterns from the data:</p>
 <ul>
-<li>
-<p>This tells Heroku to run a Gunicorn web process using api.wsgi:app as the entry point.</p>
-</li>
-<li>
-<p>To push to Heroku, I installed the Heroku CLI and followed instructions to login and create the Heroku app before pushing the code.</p>
-</li>
+<li>Major negative impacts slightly decreased for Canadian tariffs on imports, while increasing slightly from Q3 to Q4 for U.S. tariffs on exports</li>
+<li>Minor negative impacts had a small decrease for both Canadian tariffs on imports and U.S. tariffs on exports</li>
+<li>Majority of businesses reported no impact, which increased for most businesses from Q3 to Q4</li>
 </ul>
-<h2 id="deployment-to-google-cloud-run">Deployment to Google Cloud Run<a hidden class="anchor" aria-hidden="true" href="#deployment-to-google-cloud-run">#</a></h2>
-<h3 id="why-google-cloud-run">Why Google Cloud Run?<a hidden class="anchor" aria-hidden="true" href="#why-google-cloud-run">#</a></h3>
-<p>After exploring various deployment options, I chose Google Cloud Run for several reasons:</p>
+<p>This indicates that tariff stress did in fact stabilize for most firms, however, some businesses experienced growing pressure.</p>
+<h2 id="industry-level-changes">Industry-level changes<a hidden class="anchor" aria-hidden="true" href="#industry-level-changes">#</a></h2>
+<p><img loading="lazy" src="./industry-pressure.png" alt="Industry pressure"  />
+</p>
+<p>This chart shows how tariff severity has changed from quarter to quarter, highlighting rising pressure and easing pressure in tariff severity from Q3 to Q4.</p>
 <ul>
-<li>Flexible Runtime Environment: Cloud Run allows custom Docker containers, which was important for my project&rsquo;s dependencies like FFmpeg and torchaudio.</li>
-<li>Library Compatibility: Cloud Run&rsquo;s container-based approach made it straightforward to include specialized audio processing libraries that are challenging to deploy on other platforms.</li>
+<li>Information and cultural industries: decreased pressure on imports but increased on exports</li>
+<li>Arts, entertainment, and recreation: slightly affected on imports and rising pressure on exports</li>
+<li>Agriculture, forestry, fishing, and hunting: declining pressure on both imports and exports</li>
 </ul>
-<h3 id="deployment-strategy-single-docker-container">Deployment Strategy: Single Docker Container<a hidden class="anchor" aria-hidden="true" href="#deployment-strategy-single-docker-container">#</a></h3>
-<p>I opted for a single Docker container that encapsulates both the React frontend and Flask backend. This approach offers:</p>
-<ul>
-<li>Simplicity: One codebase directory and a unified Dockerfile.</li>
-<li>Consistent Environment: Identical setup across local, staging, and production environments.</li>
-</ul>
-<h3 id="deployment-steps">Deployment Steps<a hidden class="anchor" aria-hidden="true" href="#deployment-steps">#</a></h3>
-<ol>
-<li>Install Google Cloud SDK</li>
-<li>Authenticate with GCP</li>
-<li>Build container image with Cloud Build</li>
-<li>Deploy the container image to Cloud Run</li>
-</ol>
-<h3 id="multi-stage-dockerfile">Multi-Stage Dockerfile<a hidden class="anchor" aria-hidden="true" href="#multi-stage-dockerfile">#</a></h3>
-<p>My Dockerfile uses a multi-stage build:</p>
-<ul>
-<li>First stage: Build React frontend using Node</li>
-<li>Second stage: Use a slim Python base image, install dependencies, copy frontend build artifacts</li>
-<li>Run Gunicorn on port 8080</li>
-</ul>
+<p>This chart shows that tariff impacts are uneven and depend on trade orientation. In the industry examples I chose above, we can conclude that industries like information and cultural sectors, diverge depending on trade orientation, meaning it sees relief in one area (imports) but growing pressure in another (exports). Other industries such as arts and recreation, show that services can also be indirectly affected. Finally, agriculture and related industries see a decline in severity in both directions, which means that there is relative stability overall.</p>
 <h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
-<p>Both Heroku and Google Cloud Run have their own benefits. Heroku’s plug-and-play approach helped me get started quickly, while Cloud Run’s container approach gave me more flexibility and scalability for handling growth and specialized libraries like FFmpeg and torchaudio.</p>
+<p>This analysis should be interpreted as an indicator of perceived pressure rather than direct economic losses. Business sentiment is important because it shapes pricing, investment and supply-chain decisions before those effects actually take charge.</p>
 
 
   </div>

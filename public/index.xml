@@ -2,42 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Programming Polyglot - Julia&#39;s Blog</title>
-    <link>https://julia-sam.github.io/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content on Programming Polyglot - Julia&#39;s Blog</description>
     <generator>Hugo -- 0.126.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jan 2025 21:03:46 -0500</lastBuildDate>
-    <atom:link href="https://julia-sam.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jan 2026 13:41:40 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Canadian Businesses Perceived Tariff Pressure in 2025</title>
+      <link>http://localhost:1313/blog/posts/tariffs/</link>
+      <pubDate>Sun, 04 Jan 2026 13:41:40 -0500</pubDate>
+      <guid>http://localhost:1313/blog/posts/tariffs/</guid>
+      <description>Introduction In 2025, trade tensions and tariff uncertainty was felt across North America. While tariffs are often discussed in terms of trade volumes and prices, I focus on how businesses perceive their impact, and how those perceptions evolve over time.
+This project explores quarterly business survey data from Statistics Canada and examines how Canadian businesses report the impact of tariffs across industries.
+Distribution of reported impacts This chart reflects how tariff impacts are distributed for both Canadian tariffs on imports and U.</description>
+    </item>
     <item>
       <title>GCP vs Heroku: Deploying My Pronunciation Improvement App</title>
-      <link>https://julia-sam.github.io/blog/posts/deployment/</link>
+      <link>http://localhost:1313/blog/posts/deployment/</link>
       <pubDate>Sun, 12 Jan 2025 21:03:46 -0500</pubDate>
-      <guid>https://julia-sam.github.io/blog/posts/deployment/</guid>
+      <guid>http://localhost:1313/blog/posts/deployment/</guid>
       <description>Introduction With a background in Linguistics and Computer Science, I have always been interested in the interface between language and technology. This led me to build my pronunciation improvement app - a web application designed to help users practise and refine their English pronunciation. The app listens to the user&amp;rsquo;s speech input, analyzes it, and provides feedback to pinpoint where improvement might be needed.
 Project Overview Tech Stack and Libraries Frontend A React app that uses Chart.</description>
     </item>
     <item>
       <title>GDP vs Life Satisfaction</title>
-      <link>https://julia-sam.github.io/blog/posts/gdp-vs-life-satisfaction/</link>
+      <link>http://localhost:1313/blog/posts/gdp-vs-life-satisfaction/</link>
       <pubDate>Tue, 17 Sep 2024 20:55:37 -0400</pubDate>
-      <guid>https://julia-sam.github.io/blog/posts/gdp-vs-life-satisfaction/</guid>
+      <guid>http://localhost:1313/blog/posts/gdp-vs-life-satisfaction/</guid>
       <description>In this post, I explore the relationship between Gross Domestic Product (GDP) and life satisfaction across various countries, using data from the OECD.
 The life satisfaction index is based on survey data, where respondents rate their satisfaction on a scale of 1 to 10, while GDP per capita is a measure of economic output per person.
 Both values were standardized for comparison, which allows to visualize the relationship between these two key metrics on the same scale, ranging from 0 to 1.</description>
     </item>
     <item>
       <title>Comparing &#34;Internet&#34; Usage Across Languages</title>
-      <link>https://julia-sam.github.io/blog/posts/chart-challenge-1/</link>
+      <link>http://localhost:1313/blog/posts/chart-challenge-1/</link>
       <pubDate>Wed, 28 Aug 2024 21:01:16 -0400</pubDate>
-      <guid>https://julia-sam.github.io/blog/posts/chart-challenge-1/</guid>
+      <guid>http://localhost:1313/blog/posts/chart-challenge-1/</guid>
       <description>Language can tell us a lot about societal trends, technological advances, and cultural shifts. Tools like Google Ngrams have provided a way to see these trends and explore the frequency of words and phrases across centuries of literature.
 Inspired by this, I wanted to explore something similar but across multiple languages and then be able to visualize it. I found an Ngrams API (based off of Google Ngrams) and created some charts across English, German, and Russian.</description>
     </item>
     <item>
       <title>Analyzing E-Commerce Customer Behaviour and Churn</title>
-      <link>https://julia-sam.github.io/blog/posts/ecommerce-churn-prediction/</link>
+      <link>http://localhost:1313/blog/posts/ecommerce-churn-prediction/</link>
       <pubDate>Sat, 20 Jul 2024 13:00:38 -0400</pubDate>
-      <guid>https://julia-sam.github.io/blog/posts/ecommerce-churn-prediction/</guid>
+      <guid>http://localhost:1313/blog/posts/ecommerce-churn-prediction/</guid>
       <description>In this post, I explore and analyze some e-commerce customer data by identifying patterns in customer satisfaction and churn.
 The dataset used for this analysis includes information on customer demographics, purchasing behavior, and satisfaction scores. Key features include:
 CustomerID Unique identifier for each customer. Gender
@@ -46,9 +55,9 @@ Marital status of the customer (Married/Single/Divorced). PreferedOrderCat Prefe
     </item>
     <item>
       <title>ChatGPT vs Claude: Ambiguity Resolution (Part I)</title>
-      <link>https://julia-sam.github.io/blog/posts/syntactic-ambiguity/</link>
+      <link>http://localhost:1313/blog/posts/syntactic-ambiguity/</link>
       <pubDate>Tue, 28 May 2024 12:12:38 -0400</pubDate>
-      <guid>https://julia-sam.github.io/blog/posts/syntactic-ambiguity/</guid>
+      <guid>http://localhost:1313/blog/posts/syntactic-ambiguity/</guid>
       <description>&amp;ldquo;One morning I shot an elephant in my pajamas.&amp;rdquo; &amp;ndash; Groucho Marx
 Syntactic ambiguities occur when a sentence can have multiple meanings. For example, consider the sentence from the famous Groucho Marx joke above. This sentence is ambiguous because it&amp;rsquo;s unclear whether the elephant was in pajamas or Groucho Marx was in pajamas while shooting the elephant. If you&amp;rsquo;re curious which interpretation Groucho Marx meant, here is the full quote: &amp;ldquo;One morning I shot an elephant in my pajamas.</description>
     </item>
