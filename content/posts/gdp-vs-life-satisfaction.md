@@ -4,7 +4,7 @@ date = 2024-09-17T20:55:37-04:00
 draft = false
 +++
 
-<iframe src="/blog/charts/gdp_life_satisfaction.html" width="100%" height="400"></iframe>
+<iframe src="./gdp_life_satisfaction.html" width="100%" height="400"></iframe>
 
 In this post, I explore the relationship between Gross Domestic Product (GDP) and life satisfaction across various countries, using data from the [OECD](https://data-explorer.oecd.org/).
 
