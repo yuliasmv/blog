@@ -1,6 +1,6 @@
 params:
   environment: "production"
-  baseURL: https://programming-polyglot.com/
+  baseURL: https://thethoughtstack.com/
 
 services:
   googleAnalytics:
