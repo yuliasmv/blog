@@ -87,24 +87,35 @@ article img {
   line-height: 1.5;
 }
 
-/* Force light theme */
-:root {
-  color-scheme: light;
-}
-
+/* Force light text colors */
 body {
-  background-color: #ffffff !important;
   color: #000000 !important;
 }
 
-/* Light theme variables */
-:root:not([data-theme="dark"]) {
-  --primary: #000000;
-  --secondary: #000000;
-  --accent: #f0f0f0;
+h1, h2, h3, h4, h5, h6 {
+  color: #000000 !important;
 }
 
-/* Override any dark theme */
-[data-theme="dark"] {
-  display: none !important;
+.home-info h1 {
+  color: #000000 !important;
+}
+
+.home-info p {
+  color: #333333 !important;
+}
+
+.post-card h2 {
+  color: #000000 !important;
+}
+
+.post-card p {
+  color: #333333 !important;
+}
+
+.post-description {
+  color: #333333 !important;
+}
+
+.post-meta {
+  color: #666666 !important;
 }

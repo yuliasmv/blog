@@ -10,6 +10,9 @@ markup:
       unsafe: true
 
 params:
+  defaultTheme: light
+  disableThemeToggle: true
+
   homeInfoParams:
     title: "Welcome to my stack of thoughts"
 
@@ -26,6 +29,3 @@ params:
     hidden: false
     hiddenInList: false
     hiddenInSingle: false
-
-    defaultTheme: light
-    disableThemeToggle: true
