@@ -2,8 +2,13 @@
 title = 'ChatGPT vs Claude: Ambiguity Resolution (Part I)'
 date = 2024-05-28T12:12:38-04:00
 draft = false
+description = "Investigating how LLMs generate sentence completions from ambiguous partial sentences."
+
+[cover]
+image = "./ambiguous-img.jpeg"
+alt = "Ambiguity resolution"
 +++
-![Ambiguous images](./ambiguous-img.jpeg)
+
 
 >*"One morning I shot an elephant in my pajamas." -- Groucho Marx*
 

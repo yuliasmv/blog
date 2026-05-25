@@ -2,9 +2,12 @@
 title = 'Comparing "Internet" Usage Across Languages'
 date = 2024-08-28T21:01:16-04:00
 draft = false
-+++
+description = "Exploring societal trends, technological advances, and cultural shifts through language. "
 
-![Retro Computer](./computer-old.jpeg)
+[cover]
+image = "./computer-old.jpeg"
+alt = "Internet usage across languages"
++++
 
 Language can tell us a lot about societal trends, technological advances, and cultural shifts. Tools like [Google Ngrams](https://books.google.com/ngrams/) have provided a way to see these trends and explore the frequency of words and phrases across centuries of literature. 
 

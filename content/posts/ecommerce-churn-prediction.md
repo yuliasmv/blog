@@ -2,6 +2,11 @@
 title = 'Analyzing E-Commerce Customer Behaviour and Churn'
 date = 2024-07-20T13:00:38-04:00
 draft = false
+description = "Exploring e-commerce customer data and identifying patterns in customer satisfaction and churn."
+
+[cover]
+image = "./consumerbehaviour.png"
+alt = "E-Commerce Churn Prediction"
 +++
 
 In this post, I explore and analyze some e-commerce customer data by identifying patterns in customer satisfaction and churn. 

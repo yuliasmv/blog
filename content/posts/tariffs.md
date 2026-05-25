@@ -2,8 +2,12 @@
 title = 'How Canadian Businesses Perceived Tariff Pressure in 2025'
 date = 2026-01-04T13:41:40-05:00
 draft = false
+description = "Exploring how Canadian businesses perceive tariff impacts"
+
+[cover]
+image = "./us-can-tariffs.jpg"
+alt = "US Canada tariffs"
 +++
-![tariffs](./us-can-tariffs.jpg)
 
 ## Introduction
 In 2025, trade tensions and tariff uncertainty was felt across North America. While tariffs are often discussed in terms of trade volumes and prices, I focus on how businesses perceive their impact, and how those perceptions evolve over time.

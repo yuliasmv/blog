@@ -1,6 +1,6 @@
 baseURL: https://thethoughtstack.com/
 languageCode: en-us
-title: Thought Stack
+title: The Thought Stack
 theme: PaperMod
 googleAnalytics: G-T41YJNZVHX
 
@@ -8,3 +8,21 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+params:
+  homeInfoParams:
+    title: "Welcome to my stack of thoughts"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/yuliasmv"
+    - name: linkedin
+      url: "https://linkedin.com/in/yuliasmv"
+  
+  assets:
+    favicon: /favicon.ico
+    
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false

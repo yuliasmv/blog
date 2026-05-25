@@ -2,9 +2,13 @@
 title = 'GCP vs Heroku: Deploying My Pronunciation Improvement App'
 date = 2025-01-12T21:03:46-05:00
 draft = false
+description = "My experience deploying and building a web application designed to help users practise and refine their English pronunciation."
+
+[cover]
+image = "./GCPvsheroku.png"
+alt = "Deployment"
 +++
 
-{{< resizeimg src="./GCPvsheroku.png" alt="Heroku vs GCP" width="650" >}}
 
 ## Introduction
 With a background in Linguistics and Computer Science, I have always been interested in the interface between language and technology. This led me to build my [pronunciation improvement app](https://pronunciation-app-431109299234.northamerica-northeast1.run.app/) - a web application designed to help users practise and refine their English pronunciation. The app listens to the user's speech input, analyzes it, and provides feedback to pinpoint where improvement might be needed.

@@ -3,3 +3,86 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
+
+/* Grid layout for posts */
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.post-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e0e0e0;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.post-card h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.post-card p {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* Reduce spacing on home */
+.home-info {
+  margin-bottom: 2rem;
+}
+
+/* Images in posts */
+article img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+#theme-toggle {
+  display: none !important;
+}
+
+.post-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.post-card > *:not(.post-cover) {
+  padding: 1.5rem;
+}
+
+.post-cover {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0;
+  margin: 0;
+  display: block;
+}
+
+.post-description {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0.5rem 0 1rem 0 !important;
+  line-height: 1.5;
+}

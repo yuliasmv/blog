@@ -2,9 +2,12 @@
 title = 'GDP vs Life Satisfaction'
 date = 2024-09-17T20:55:37-04:00
 draft = false
-+++
+description="Exploring the relationship between GDP and life satisfaction across various countries."
 
-<iframe src="./gdp_life_satisfaction.html" width="100%" height="400"></iframe>
+[cover]
+image = "./loveorcash.png"
+alt = "GDP and life satisfaction"
++++
 
 In this post, I explore the relationship between Gross Domestic Product (GDP) and life satisfaction across various countries, using data from the [OECD](https://data-explorer.oecd.org/).
 
@@ -24,3 +27,5 @@ Denmark, despite having a GDP lower than Norway and Switzerland, has a life sati
 And finally, Japan and Korea are outliers, with lower life satisfaction (6.1 and 5.8), despite having moderate GDP levels.
 
 In conclusion, GDP is a critical measure of a country's economic health but it isn't the only determinant of its citizens' happiness. This analysis shows that economic activity and happiness do not always go hand in hand.
+
+<iframe src="./gdp_life_satisfaction.html" width="100%" height="400"></iframe>
