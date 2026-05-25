@@ -26,3 +26,6 @@ params:
     hidden: false
     hiddenInList: false
     hiddenInSingle: false
+
+    defaultTheme: light
+    disableThemeToggle: true
