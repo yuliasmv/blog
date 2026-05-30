@@ -22,16 +22,18 @@
 
 <div class="posts-container">
   {{ range where .Site.RegularPages "Section" "posts" }}
-    <article class="post-card">
-      {{ if .Params.cover }}
-        <img src="{{ .Params.cover.image }}" alt="{{ .Params.cover.alt }}" class="post-cover">
-      {{ end }}
-      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-      {{ if .Params.description }}
-        <p class="post-description">{{ .Params.description }}</p>
-      {{ end }}
-      <p class="post-meta">{{ .Date.Format "January 2, 2006" }}</p>
-    </article>
+    <a href="{{ .Permalink }}" class="post-card-link">
+      <article class="post-card">
+        {{ if .Params.cover }}
+          <img src="{{ .Params.cover.image }}" alt="{{ .Params.cover.alt }}" class="post-cover">
+        {{ end }}
+        <h2>{{ .Title }}</h2>
+        {{ if .Params.description }}
+          <p class="post-description">{{ .Params.description }}</p>
+        {{ end }}
+        <p class="post-meta">{{ .Date.Format "January 2, 2006" }}</p>
+      </article>
+    </a>
   {{ end }}
 </div>
 {{ end }}
